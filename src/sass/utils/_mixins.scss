@@ -1,0 +1,17 @@
+@mixin sectionPadding($top, $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+  }
+  
+  @mixin flexCentered($display: flex, $a-i: center, $j-c: center) {
+    display: $display;
+    align-items: $a-i;
+    justify-content: $j-c;
+  }
+  
+  @mixin font($f-s: 12px, $f-w: 500, $l-h: 1.58) {
+    font-size: $f-s;
+    font-weight: $f-w;
+    line-height: $l-h;
+  }
+  
