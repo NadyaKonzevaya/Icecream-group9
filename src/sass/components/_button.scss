@@ -1,0 +1,31 @@
+.btn {
+    border-radius: 22px;
+    border: 1px solid transparent;
+    padding: 0;
+    color: $accent-color;
+    background-color: $third-text-color;
+    @extend %pointer;
+    &:hover,
+    &:focus {
+      background-color: $hover-color;
+    }
+  }
+  
+  .btn--dark {
+    border-radius: 22px;
+    border: 1px solid transparent;
+    padding: 0;
+    color: $third-text-color;
+    background-color: $accent-color;
+    @extend %pointer;
+  }
+
+.button-circle {
+    @include flexCentered;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    @extend %pointer;
+    background-color: $third-text-color;
+    padding: 4px;
+}
+  

@@ -1,0 +1,22 @@
+.logo {
+    position: relative;
+    @extend %link;
+    display: flex;
+    align-items: center;
+  
+    &__img {
+      @media screen and (min-width: 1280px) {
+        position: absolute;
+        left: -60px;
+      }
+    }
+    &__text {
+      font-family: Titan One;
+      margin-left: 20px;
+      text-transform: uppercase;
+      color: $accent-color;
+      @include font($f-s: 25px, $f-w: 400, $l-h: 1.15);
+    }
+  }
+
+  
