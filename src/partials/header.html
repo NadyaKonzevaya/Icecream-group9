@@ -1,3 +1,61 @@
-<section class="header">
-    <p>header</p>
-</section>
+<header class="header">
+    <div class="container header-container">
+        <nav class="header-nav">
+            <a href="" class="logo">
+                <img class="logo__img"
+                    srcset="./images/hero-header/favicon.png 1x, ./images/hero-header/favicon-2x.png 2x"
+                    src="./images/hero-header/favicon.png" alt="Logo">
+                <span class="logo__text">icecream</span>
+            </a>
+            <button type="button" class="header-nav__button js-open-modal" data-modal="menu">
+                <svg width="20" height="12" aria-label="Переключатель мобильного меню">
+                    <use class="header-nav__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="menu-container js-modal" data-modal="menu">
+                <button type="button" class="header-nav__button header-nav__button--cross js-close-modal"
+                    aria-controls="menu-container" data-menu-button>
+                    <svg width="14" height="14" aria-label="Переключатель мобильного меню">
+                        <use class="header-nav__icon-cross" href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <button type="button" class="btn header-nav__btn--menu">
+                    <span>Buy now</span>
+                    <svg class="header-nav__icon header-nav__icon--menu" aria-label="Кнопка мобильного меню">
+                        <use href="./images/icons.svg#icon-next"></use>
+                    </svg>
+                </button>
+                <ul class="header-nav__list">
+                    <li class="header-nav__item">
+                        <a href="#hero" class="header-nav__link  header-nav__link--current">Home</a>
+                    </li>
+                    <li class="header-nav__item">
+                        <a href="#advantages" class="header-nav__link">About us</a>
+                    </li>
+                    <li class="header-nav__item"><a href="#about" class="header-nav__link">How it’s made?</a>
+                    </li>
+                    <li class="header-nav__item"><a href="#products" class="header-nav__link">Our products</a>
+                    </li>
+                    <li class="header-nav__item"><a href="#contacts" class="header-nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <button type="button" class="btn header-nav__btn js-open-modal" data-modal="buy">
+            <span>Buy now</span>
+            <svg class="header-nav__icon" aria-label="Кнопка мобильного меню">
+                <use href="./images/icons.svg#icon-next"></use>
+            </svg>
+        </button>
+        <div class="modal js-modal" data-modal="buy">
+            <svg class="modal__cross js-close-modal" aria-label="Переключатель мобильного меню">
+                <use href="./images/icons.svg#menu-icon-cross"></use>
+            </svg>
+            <h2 class="modal__title">Buy now</h2>
+            <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                sapiente
+                maiores reprehenderit
+                tempore excepturi!</p>
+        </div>
+    </div>
+</header>
