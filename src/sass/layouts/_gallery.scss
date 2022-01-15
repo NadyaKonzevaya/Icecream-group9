@@ -1,3 +1,23 @@
-.gallery {
-    background-color: red;
+.masonry__item {
+  width: 40px;
+  @media screen and (min-width: 768px) {
+    width: 85px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 140px;
+  }
+}
+
+.masonry__item--big {
+  width: 80px;
+  @media screen and (min-width: 768px) {
+    width: 175px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 285px;
+  }
+}
+
+.masonry__photo {
+  border-radius: 10px;
 }
