@@ -1,5 +1,8 @@
+.section__gallery {
+  background-image: linear-gradient(rgb(248, 207, 218), rgb(255, 255, 255));
+}
 .masonry__item {
-  width: 40px;
+  width: 10%;
   @media screen and (min-width: 768px) {
     width: 85px;
   }
@@ -9,7 +12,7 @@
 }
 
 .masonry__item--big {
-  width: 80px;
+  width: 20%;
   @media screen and (min-width: 768px) {
     width: 175px;
   }
@@ -19,5 +22,6 @@
 }
 
 .masonry__photo {
+  width: 100%;
   border-radius: 10px;
 }
