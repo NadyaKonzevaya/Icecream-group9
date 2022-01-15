@@ -1,3 +1,27 @@
-.gallery {
-    background-color: red;
+.section__gallery {
+  background-image: linear-gradient(rgb(248, 207, 218), rgb(255, 255, 255));
+}
+.masonry__item {
+  width: 10%;
+  @media screen and (min-width: 768px) {
+    width: 85px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 140px;
+  }
+}
+
+.masonry__item--big {
+  width: 20%;
+  @media screen and (min-width: 768px) {
+    width: 175px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 285px;
+  }
+}
+
+.masonry__photo {
+  width: 100%;
+  border-radius: 10px;
 }
