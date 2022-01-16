@@ -119,20 +119,21 @@
         color: $accent-color;
     }
 
-    @media screen and (max-width: 569px) {
+    @media screen and (max-width: 767px) {
         position: absolute;
-        top: 193px;
+        top: 110px;
         left: 20px;
     }
 
-    @media screen and (min-width: 570px) {
-        position: unset;
-        margin-bottom: 19px;
-    }
+    // @media screen and (min-width: 570px) {
+    //     position: unset;
+    //     
+    // }
 
     @media screen and (min-width: 768px) {
         width: 162px;
         @include font($f-s: 22px, $f-w: 400, $l-h: 1.15);
+        margin-bottom: 20px;
 
         &--color {
         @include font($f-s: 34px, $f-w: 400, $l-h: 1.15);
@@ -140,12 +141,12 @@
         }
     }
 
-    @media screen and (min-width: 960px) {
-        position: absolute;
-        top: 102px;
-        left: 130px;
-        width: 162px;
-    }
+    // @media screen and (min-width: 960px) {
+    //     position: absolute;
+    //     top: 102px;
+    //     left: 130px;
+    //     width: 162px;
+    // }
 
     @media screen and (min-width: 1280px) {
         position: unset;
@@ -167,17 +168,17 @@
     width: 83px;
     height: 24px;
     @include font($f-s: 8px, $f-w: 400, $l-h: 1.3);
-    top: 318px;
+    top: 235px;
     left: 90px;
 
     &--dark {
         width: 62px;
         height: 24px;
-        top: 318px;
+        top: 235px;
         left: 20px;
     }
 
-    @media screen and (min-width: 570px) {
+    @media screen and (min-width: 768px) {
         position: unset;
 
         &--dark {
@@ -185,25 +186,26 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
-        &--dark {
-        width: 62px;
-        height: 24px;
-        }
-    }
+    // @media screen and (min-width: 768px) {
+    //     &--dark {
+    //     width: 62px;
+    //     height: 24px;
+    //     }
+    // }
 
-    @media screen and (min-width: 960px) {
-        position: absolute;
-        top: 202px;
-        left: 200px;
+    // @media screen and (min-width: 960px) {
+    //     position: absolute;
+    //     top: 202px;
+    //     left: 200px;
 
-        &--dark {
-        top: 202px;
-        left: 130px;
-        }
-    }
+    //     &--dark {
+    //     top: 202px;
+    //     left: 130px;
+    //     }
+    // }
 
     @media screen and (min-width: 1280px) {
+        @include font($f-s: 14px, $f-w: 400, $l-h: 1.3);
         position: unset;
         width: 138px;
         height: 40px;
@@ -230,8 +232,8 @@
     background-repeat: no-repeat;
     width: 168px;
     height: 133px;
-    top: 266px;
-    right: 34px;
+    top: 164px;
+    right: 14px;
     background-image: url('../images/hero-header/tablet/girl-tablet.png');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -240,8 +242,8 @@
     @media screen and (min-width: 1280px) {
         width: 293px;
         height: 232px;
-        top: 433px;
-        right: 109px;
+        top: 262px;
+        right: -8px;
         background-image: url('../images/hero-header/desktop/girl-desktop.png');
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -258,8 +260,8 @@
     background-repeat: no-repeat;
     width: 124px;
     height: 126px;
-    top: 245px;
-    left: 34px;
+    top: 143px;
+    left: 20px;
     background-image: url('../images/hero-header/tablet/milk-tablet.png');
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -269,8 +271,8 @@
     @media screen and (min-width: 1280px) {
         width: 188px;
         height: 191px;
-        top: 429px;
-        left: 77px;
+        top: 265px;
+        left: -22px;
         background-image: url('../images/hero-header/desktop/milk-desktop.png');
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -282,15 +284,15 @@
 .hero__text {
     position: absolute;
     width: 114px;
-    top: 292px;
-    left: 154px;
+    top: 190px;
+    left: 137px;
     @include font($f-s: 8px, $f-w: 400, $l-h: 1.5);
     color: $third-text-color;
 
     @media screen and (min-width: 1280px) {
         width: 200px;
-        top: 485px;
-        left: 295px;
+        top: 315px;
+        left: 197px;
         @include font($f-s: 14px, $f-w: 400, $l-h: 1.43);
     }
 }
@@ -299,15 +301,15 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    top: 347px;
-    left: 154px;
+    top: 245px;
+    left: 137px;
     padding: 5px;
 
     @media screen and (min-width: 1280px) {
         width: 26px;
         height: 26px;
-        top: 583px;
-        left: 295px;
+        top: 413px;
+        left: 197px;
         padding: 8px;
     }
 }
@@ -330,8 +332,8 @@
 
 .advant-list__circle {
     position: absolute;
-    top: 94px;
-    right: 34px;
+    top: -7px;
+    right: 14px;
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -339,24 +341,24 @@
     background-color: $third-text-color;
 
     &--bottom {
-        top: 151px;
+        top: 50px;
     }
 
     @media screen and (min-width: 1280px) {
-        top: 156px;
-        right: 97px;
+        top: -16px;
+        right: -3px;
         width: 30px;
         height: 30px;
         &--bottom {
-        top: 248px;
+        top: 76px;
         }
     }
 }
 
 .advant-list__number {
     position: absolute;
-    top: 96px;
-    right: 44px;
+    top: -5px;
+    right: 24px;
     font-family: Titan One;
     font-weight: 400;
     font-size: 28px;
@@ -366,37 +368,37 @@
     color: $accent-color;
 
     &--bottom {
-        top: 152px;
+        top: 51px;
     }
 
     @media screen and (min-width: 1280px) {
-        top: 160px;
-        right: 115px;
+        top: -12px;
+        right: 15px;
         font-size: 46px;
 
         &--bottom {
-        top: 251px;
+        top: 79px;
         }
     }
 }
 
 .advant-list__text {
     position: absolute;
-    top: 128px;
-    right: 44px;
+    top: 27px;
+    right: 24px;
     @include font($f-s: 8px, $f-w: 400, $l-h: 1.25);
     color: $third-text-color;
 
     &--bottom {
-        top: 184px;
+        top: 83px;
     }
 
     @media screen and (min-width: 1280px) {
-        top: 215px;
-        right: 115px;
+        top: 43px;
+        right: 15px;
         @include font($f-s: 14px, $f-w: 400, $l-h: 1.29);
         &--bottom {
-        top: 306px;
+        top: 134px;
         }
     }
 }
