@@ -1,3 +1,101 @@
-.customer-reviews {
-    background-color: yellow;
+.slider {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.slider-img {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.slider-text {
+  padding: 43px 66px 26px 57px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  max-width: 280px;
+  &:not(:last-child) {
+    margin-bottom: 52px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+    &:not(:last-child) {
+      margin-bottom: 42px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 926px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.slider-title {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  max-width: 157px;
+  background-image: repeating-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0) 29px,
+    #e1e1e1 0,
+    #e1e1e1 30px
+  );
+  &::before {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    content: '';
+    background-image: url(/images/customer-reviews/quotes.png);
+    background-size: 54px 40px;
+    width: 54px;
+    height: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 460px;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 750px;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+  .slider-paragraph {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    color: #000000;
+    @media screen and (min-width: 768px) {
+      max-width: 460px;
+    }
+    @media screen and (min-width: 1280px) {
+      max: width 750px;
+      font-size: 20px;
+    }
+  }
+}
+.slider-bottom {
+  margin-top: -15px;
+  &::before {
+    display: block;
+    margin: 0 auto;
+    font-weight: 700;
+    margin-bottom: 30px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    content: '...';
+    color: #c7133e;
+  }
 }
