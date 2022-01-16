@@ -1,3 +1,15 @@
+.review {
+  padding-top: 80px;
+  padding-bottom: 86px;
+  @media screen and (min-width: 768px) {
+    padding-top: 121px;
+    padding-bottom: 119px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 123px;
+    padding-bottom: 132px;
+  }
+}
 .slider {
   display: block;
   justify-content: center;
@@ -5,12 +17,13 @@
   text-align: center;
 }
 .slider-img {
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  width: 85px;
+  height: 85px;
   margin: 0 auto;
   margin-bottom: 15px;
 }
 .slider-text {
+  position: relative;
   padding: 43px 66px 26px 57px;
   margin: 0 auto;
   background-color: #fafafa;
@@ -34,8 +47,6 @@
 }
 
 .slider-title {
-  position: relative;
-  z-index: 2;
   display: block;
   margin-left: auto;
   margin-right: auto;
