@@ -54,5 +54,8 @@
 <symbol id="icon-facebook-base" viewBox="0 0 32 32">
     4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
 </symbol>
+<symbol id="icon-next-white" viewBox="0 0 22 32">
+    <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.49 3.2l13.696 12.8-13.696 12.8"></path>
+</symbol>
 </defs>
 </svg>
