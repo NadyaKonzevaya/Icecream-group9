@@ -1,0 +1,33 @@
+.pre-title {
+    font-family: Titan One;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $third-accent-color;
+    @include font($f-s: 18px, $f-w: 400, $l-h: 1.17);
+    margin-bottom: 15px;
+  
+    @media screen and (min-width: 768px) {
+      @include font($f-s: 26px, $f-w: 400, $l-h: 1.15);
+    }
+  
+    @media screen and (min-width: 1280px) {
+      @include font($f-s: 30px, $f-w: 400, $l-h: 1.13);
+    }
+}
+  
+.title {
+    font-family: Titan One;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $accent-color;
+    @include font($f-s: 34px, $f-w: 400, $l-h: 1.15);
+  
+    @media screen and (min-width: 768px) {
+      @include font($f-s: 48px, $f-w: 400, $l-h: 1.15);
+    }
+  
+    @media screen and (min-width: 1280px) {
+      @include font($f-s: 58px, $f-w: 400, $l-h: 1.14);
+    }
+}
+  
