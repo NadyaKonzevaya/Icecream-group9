@@ -1,193 +1,191 @@
 .header {
-   position: absolute;
-   z-index: 1;
-   width: 100%;
-   top: 0;
-   @media screen and (max-width: 767px) {
-      padding-top: 6px;
-   }
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  @media screen and (max-width: 767px) {
+    padding-top: 6px;
+  }
 
-   @media screen and (min-width: 768px) {
-      padding-top: 37px;
-   }
+  @media screen and (min-width: 768px) {
+    padding-top: 37px;
+  }
 }
 
 .header-container {
-   @media screen and (min-width: 768px) {
-      display: flex;
-      align-items: center;
-   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header-nav {
-   display: flex;
-   align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header-nav__button {
-margin: 0;
-padding: 0;
-border: 0;
-background-color: transparent;
-margin-left: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  margin-left: auto;
 
-&--cross {
-   position: absolute;
-   top: 23px;
-   right: 28px;
-}
+  &--cross {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+  }
 
-@media screen and (min-width: 768px) {
-   margin-left: 285px;
+  @media screen and (min-width: 768px) {
+    margin-left: 285px;
 
-   &--cross {
+    &--cross {
       position: absolute;
       top: 23px;
       right: 34px;
-   }
-}
+    }
+  }
 
-@media screen and (min-width: 1280px) {
-   display: none;
-}
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .menu-container {
-background-color: $menu-color;
-padding: 60px 20px;
-color: $third-text-color;
-@media screen and (max-width: 1279px) {
-   transform: translateX(101%);
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   z-index: 2;
-   position: fixed;
-   z-index: 2;
-   top: 0;
-   right: 0;
-   width: 250px;
-   height: 100vh;
-   &.is-open {
+  background-color: $menu-color;
+  padding: 60px 20px;
+  color: $third-text-color;
+  @media screen and (max-width: 1279px) {
+    transform: translateX(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    &.is-open {
       transform: translateX(0);
       display: flex;
       flex-direction: column;
-   }
-}
+    }
+  }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-   width: 254px;
-   // display: flex;
-   // align-items: center;
-   // margin-left: 88px;
-   // padding: 0;
-}
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 254px;
+    // display: flex;
+    // align-items: center;
+    // margin-left: 88px;
+    // padding: 0;
+  }
 
-@media screen and (min-width: 1280px) {
-   display: flex;
-   background-color: unset;
-   padding: unset;
-}
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    background-color: unset;
+    padding: unset;
+  }
 }
 
 .menu-container.is-open {
-opacity: 1;
-visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 .header-nav__btn {
-display: none;
-&--menu {
-   margin: 0 auto;
-   width: 209px;
-   height: 44px;
-   @include font($f-s: 16px, $f-w: 700, $l-h: 1.31);
-}
+  display: none;
+  &--menu {
+    margin: 0 auto;
+    width: 209px;
+    height: 44px;
+    @include font($f-s: 16px, $f-w: 700, $l-h: 1.31);
+  }
 
-@media screen and (min-width: 768px) {
-   display: block;
-   margin-left: auto;
-   width: 160px;
-   height: 44px;
-   @include font($f-s: 16px, $f-w: 700, $l-h: 1.31);
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    width: 160px;
+    height: 44px;
+    @include font($f-s: 16px, $f-w: 700, $l-h: 1.31);
 
-   &--menu {
+    &--menu {
       width: 186px;
-   }
-}
-@media screen and (min-width: 1280px) {
-   &--menu {
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    &--menu {
       display: none;
-   }
-}
+    }
+  }
 }
 
 .header-nav__icon {
-   margin-left: 20px;
-   width: 6px;
-   height: 8px;
+  margin-left: 20px;
+  width: 6px;
+  height: 8px;
 
-   &--menu {
-      margin-left: 25px;
-   }
+  &--menu {
+    margin-left: 25px;
+  }
 }
 
-
 .header-nav__list {
-   @extend %list;
+  @extend %list;
 
-   @media screen and (max-width: 1279px) {
-      margin-top: 32px;
-   }
+  @media screen and (max-width: 1279px) {
+    margin-top: 32px;
+  }
 
-   @media screen and (min-width: 1280px) {
-      display: flex;
-      margin-left: 110px;
-   }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    margin-left: 110px;
+  }
 }
 
 .header-nav__item {
-   @media screen and (max-width: 1279px) {
-      position: relative;
-      @include font($f-s: 14px, $f-w: 700, $l-h: 1.29);
-      &:not(:last-child) {
-         margin-bottom: 23px;
-      }
+  @media screen and (max-width: 1279px) {
+    position: relative;
+    @include font($f-s: 14px, $f-w: 700, $l-h: 1.29);
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
 
-      &::before {
-         content: '';
-         display: block;
-         width: 250px;
-         position: absolute;
-         left: -20px;
-         top: -12px;
-         height: 1px;
-         background-color: #e18298;
-      }
+    &::before {
+      content: '';
+      display: block;
+      width: 250px;
+      position: absolute;
+      left: -20px;
+      top: -12px;
+      height: 1px;
+      background-color: #e18298;
+    }
 
-      &:last-child::after {
-         content: '';
-         display: block;
-         width: 250px;
-         position: absolute;
-         left: -20px;
-         bottom: -12px;
-         height: 1px;
-         background-color: #e18298;
-      }
-   }
+    &:last-child::after {
+      content: '';
+      display: block;
+      width: 250px;
+      position: absolute;
+      left: -20px;
+      bottom: -12px;
+      height: 1px;
+      background-color: #e18298;
+    }
+  }
 
-   @media screen and (min-width: 1280px) {
-      @include font($f-s: 16px, $f-w: 700, $l-h: 1.31);
-      &:not(:last-child) {
-         margin-right: 35px;
-      }
-   }
+  @media screen and (min-width: 1280px) {
+    @include font($f-s: 16px, $f-w: 700, $l-h: 1.31);
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
 }
 
 .header-nav__link {
-   @extend %link;
-   color: $third-text-color;
-   &--current {
-      color: $accent-color;
-   }
+  @extend %link;
+  color: $third-text-color;
+  &--current {
+    color: $accent-color;
+  }
 }
-
