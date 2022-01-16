@@ -1,3 +1,143 @@
-.advantages {
-    background-color: teal;
+.advantages{
+background-color: $background-color;
+
+    @media screen and (max-width: 767px){
+        @include sectionPadding(39px, 50px);
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        @include sectionPadding(33px, 68px);
+    }
+
+    @media screen and (min-width: 1200px){
+        @include sectionPadding(20px, 70px);
+    }
+}
+
+.advantages__list{
+    @extend %list;
+
+    @media screen and (min-width:768px){
+        display: flex;
+        margin-top: -60px;
+        margin-left: -60px;
+    }
+
+    @media screen and (min-width:1200px){
+        margin-top: -30px;
+        margin-left: -30px;
+    }
+}
+
+.advantages__item{
+    width: 230px;
+    height: 156px;
+
+    &:not(:first-child){
+        @media screen and (min-width:480px) and(max-width:767px){
+            margin-top: 38px;
+        }
+    }
+    
+    @media screen and (min-width:768px) {
+        width: 180px;
+        height: 226px;
+        flex-basis: calc(100% / 3 - 60px);
+        margin-top: 60px;
+        margin-left: 60px;
+    }
+
+    @media screen and (min-width:1200px){
+        width: 330px;
+        height: 222px;
+        flex-basis: calc(100% / 3 - 30px);
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+}
+
+.advantages__title{
+    position: relative;
+    padding-top: 66px;
+    height: 56px;
+
+    @media screen and(min-width:1200px){
+        padding-top: 90px;
+        height: 65px;
+    }
+
+    @media screen and(min-width:767px){
+        padding-top: 86px;
+    }
+
+    &-child1::before{
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url('../images/advantages/advant1.png');
+        width: 33px;
+        height: 50px;
+        bottom: 16px;
+
+        @media screen and(min-width:767px){
+            bottom: 36px;
+        }
+
+        @media screen and (min-width:1200px){
+            bottom: 40px;
+        }
+    }
+
+        &-child2::before{
+            content: "";
+            position: absolute;
+            display: block;
+            background-image: url('../images/advantages/advant2.png');
+            width: 50px;
+            height: 50px;
+            bottom: 16px;
+
+            @media screen and(min-width:767px){
+                bottom: 36px;
+            }
+    
+            @media screen and (min-width:1200px){
+                bottom: 40px;
+            }
+        }
+
+    &-child3::before{
+        content: "";
+        position: absolute;
+        display: block;
+        background-image: url('../images/advantages/advant3.png');
+        width: 44px;
+        height: 50px;
+        bottom: 16px;
+
+        @media screen and(min-width:767px){
+            bottom: 36px;
+        }
+
+        @media screen and (min-width:1200px){
+            bottom: 40px;
+        }
+    }
+}
+
+.advantages__after-title{
+    padding-top: 54px;
+    font-family: DM Sans;
+    color: $main-text-color;
+    @include font($f-s: 12px, $f-w: 700, $l-h: 1.7);
+
+    @media screen and (min-width:767px){
+        padding-top: 69px;
+        @include font($f-s: 14px, $f-w: 700, $l-h: 1.7);
+    }
+
+    @media screen and (min-width:1200px){
+        padding-top: 80px;
+        @include font($f-s: 16px, $f-w: 700, $l-h: 1.7);
+    }
 }
