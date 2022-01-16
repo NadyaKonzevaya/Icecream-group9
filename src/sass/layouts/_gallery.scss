@@ -1,8 +1,102 @@
 .section__gallery {
   background-image: linear-gradient(rgb(248, 207, 218), rgb(255, 255, 255));
 }
+
+.masonry__gallery {
+  display: flex;
+  justify-content: center;
+}
+.masonry__col:not(:last-child) {
+  margin-right: 3px;
+  @media screen and (min-width: 768px) {
+    margin-right: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 7px;
+  }
+}
+
+//.masonry__col {
+// flex-basis: calc(100% / 7);
+//}
+.masonry__col--geo1 {
+  padding-top: 40px;
+  padding-bottom: 42px;
+  @media screen and (min-width: 768px) {
+    padding-top: 87px;
+    padding-bottom: 92px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 140px;
+    padding-bottom: 150px;
+  }
+}
+
+.masonry__col--geo2 {
+  padding-top: 25px;
+  padding-bottom: 14px;
+  @media screen and (min-width: 768px) {
+    padding-top: 54px;
+    padding-bottom: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 88px;
+    padding-bottom: 55px;
+  }
+}
+
+.masonry__col--geo3 {
+  padding-top: 20px;
+  padding-bottom: 19px;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 39px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 78px;
+    padding-bottom: 65px;
+  }
+}
+.masonry__col--geo4 {
+  padding-top: 25px;
+  padding-bottom: 14px;
+  @media screen and (min-width: 768px) {
+    padding-top: 62px;
+    padding-bottom: 27px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 97px;
+    padding-bottom: 46px;
+  }
+}
+.masonry__col--geo5 {
+  padding-top: 16px;
+  padding-bottom: 23px;
+  @media screen and (min-width: 768px) {
+    padding-top: 34px;
+    padding-bottom: 55px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 63px;
+    padding-bottom: 80px;
+  }
+}
+
+.masonry__col--geo6 {
+  padding-top: 42px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding-top: 94px;
+    padding-bottom: 85px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 142px;
+    padding-bottom: 149px;
+  }
+}
+
 .masonry__item {
-  width: 10%;
+  width: 40px;
   @media screen and (min-width: 768px) {
     width: 85px;
   }
@@ -11,7 +105,16 @@
   }
 }
 
-.masonry__item--big {
+.masonry__item--geo {
+  margin-bottom: 3px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 7px;
+  }
+}
+.masonry__item--gigante {
   width: 20%;
   @media screen and (min-width: 768px) {
     width: 175px;
