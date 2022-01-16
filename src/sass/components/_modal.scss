@@ -1,63 +1,62 @@
 .modal {
-    /* скрываем МО */
-    opacity: 0;
-    visibility: hidden;
-  
-    /*  Установаем ширину окна  */
-    width: 50%;
-  
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  
-    border-radius: 22px;
-    padding: 15px;
-    z-index: 1;
-  
-    background-color: $third-text-color;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-    &__title {
-      color: $accent-color;
-      text-align: center;
-    }
-    &__text {
-      color: $second-text-color;
-      text-align: center;
-    }
-  }
-  
-  .modal.is-open,
-  .overlay.is-open {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .modal__cross {
-    @extend %pointer;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    fill: $accent-color;
-  }
-  
-  .overlay {
-    /* скрываем подложку */
-    opacity: 0;
-    visibility: hidden;
-  
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $overlay-color;
-    // z-index: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+  /* скрываем МО */
+  opacity: 0;
+  visibility: hidden;
 
+  /*  Установаем ширину окна  */
+  width: 50%;
+
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 22px;
+  padding: 15px;
+  z-index: 1;
+
+  background-color: $third-text-color;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__title {
+    color: $accent-color;
+    text-align: center;
+  }
+  &__text {
+    color: $second-text-color;
+    text-align: center;
+  }
+}
+
+.modal.is-open,
+.overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__cross {
+  @extend %pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  fill: $accent-color;
+}
+
+.overlay {
+  /* скрываем подложку */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $overlay-color;
+  // z-index: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

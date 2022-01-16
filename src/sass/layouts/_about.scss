@@ -1,3 +1,37 @@
 .about {
-    background-color: tomato;
+  @include sectionPadding(125px, 20px);
+  background-color: $background-color;
+}
+
+.about__pre-title {
+  text-align: center;
+}
+
+.about__title {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.about__thumb {
+  margin: auto;
+}
+
+.about__img {
+}
+
+.about__black-text {
+  display: block;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: $main-text-color;
+}
+
+.about__milk-splash-box {
+  width: 100%;
+
+  //   background-image: url();
 }

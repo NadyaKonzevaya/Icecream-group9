@@ -1,5 +1,8 @@
-<section class="contacts">
+<section class="contacts" id="contacts">
+   
     <div class="container contacts__box">
+        <h2 class="visually-hidden">Contacts card</h2>
+        
         <ul class="contacts__list-card">
             <li class="contacts__item-card">
                 <span class="contact__label label-one">CAFE</span>
@@ -42,23 +45,26 @@
 
 
         <ul class="contact__list-btn">
+
             <li class="contact__item-btn ">
-                <button type="button" class="btn--dark btn-our-loc">
+                <button type="button" class="btn--dark btn-our-loc" 
+                        data-modal="our-location">
                     Our Locations
-                    
+                    <svg class="contact__icon icon-svg">
+                        <use href="./images/icons.svg#icon-next"></use>
+                    </svg>
                 </button>
             </li>
+
+
             <li class="contact__item-btn ">
-                <button type="button" class="btn-franchise btn">
+                <button type="button" class="btn-franchise btn" data-modal="">
                     Franchise
-                    <svg class="contact__icon header-nav__icon--menu" aria-label="Кнопка мобильного меню">
+                    <svg class="contact__icon">
                         <use href="./images/icons.svg#icon-next"></use>
                     </svg>
                 </button>
             </li>
         </ul>
-
-
-
     </div>
 </section>
