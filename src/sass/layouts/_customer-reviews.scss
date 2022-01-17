@@ -1,3 +1,156 @@
-.customer-reviews {
-    background-color: yellow;
+.review {
+  padding-top: 40px;
+  padding-bottom: 43px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 61px;
+    padding-bottom: 76px;
+  }
+}
+.slider {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 0;
+}
+.slider-img {
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+.slider-text {
+  padding: 43px 66px 26px 57px;
+  margin: 0 auto;
+  background-color: #fafafa;
+  max-width: 280px;
+  &::before {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    content: '';
+    // background-image: url(/images/customer-reviews/quotes.png);
+    background-size: contain;
+    width: 54px;
+    height: 40px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 52px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+    &:not(:last-child) {
+      margin-bottom: 42px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 926px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.slider-title {
+  position: relative;
+  left: 8px;
+  top: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  max-width: 157px;
+  z-index: 10;
+  background-image: repeating-linear-gradient(
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0) 29px,
+    #e1e1e1 0,
+    #e1e1e1 30px
+  );
+  @media screen and (min-width: 768px) {
+    max-width: 460px;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 750px;
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+  .slider-paragraph {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.85;
+    color: #000000;
+    @media screen and (min-width: 768px) {
+      max-width: 460px;
+    }
+    @media screen and (min-width: 1280px) {
+      max: width 750px;
+      font-size: 20px;
+    }
+  }
+}
+.slider-bottom {
+  margin-top: -15px;
+  &::before {
+    display: block;
+    margin: 0 auto;
+    font-weight: 700;
+    margin-bottom: 30px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    content: '...';
+    color: #c7133e;
+  }
+}
+.slick-track {
+  display: flex;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 0;
+}
+
+.slick-dots {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slick-dots li {
+  list-style: none;
+  margin: 0 18px;
+}
+.slick-dots li.slick-active button {
+  // background-image: url(/images/customer-reviews/house.png);
+  background-color: transparent;
+  width: 12.4px;
+  height: 12px;
+  border-radius: 0%;
+}
+.slick-dots li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  border: none;
 }
