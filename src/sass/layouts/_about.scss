@@ -3,35 +3,129 @@
   background-color: $background-color;
 }
 
+.about__milk-splash-box {
+  width: 100%;
+  background-image: url('../images/about/mobile/bg-mobile.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {    
+     background-image: url('../images/about/mobile/bg-mobile.png');
+  }  
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/about/desktop/bg-destop.png');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {    
+     background-image: url('../images/about/desktop/bg-destop-2x.png');
+    }
+  }
+}
+
 .about__pre-title {
   text-align: center;
 }
 
 .about__title {
   text-align: center;
-  padding-top: 25px;
-}
+  }
 
 .about__thumb {
-  margin: auto;
+  margin: 55px auto 0;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    
+  }
+  
 }
 
 .about__img {
+  margin: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 340px;    
+    margin-right: 17px;
+  }  
+}
+
+.about__text-wrap {
+  padding-left: 35px;
+  padding-right: 35px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-end;
+    width: 340px;   
+    padding-left: 0;
+    padding-right: 0;
+  }  
 }
 
 .about__black-text {
-  display: block;
-  padding-left: 35px;
-  padding-right: 35px;
+  display: block;  
   margin-bottom: 40px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
   color: $main-text-color;
+
+  @media screen and (min-width: 768px) {  
+  font-size: 14px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  }
 }
 
-.about__milk-splash-box {
-  width: 100%;
+.about__grey-text {
+  display: block;  
+  font-weight: 500;
+font-size: 12px;
+line-height: 1.62;
+color: $second-text-color;
 
-  //   background-image: url();
+@media screen and (min-width: 768px) {
+font-size: 14px;
+line-height: 1.76;
+letter-spacing: 0.04em;
+}
+}
+
+.grey-text--top {
+  margin-bottom: 15px;
+}
+
+.about__btn {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 176px;
+  height: 44px;
+  margin: 20px auto 0;
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.29px;
+color: $accent-color;
+
+@media screen and (min-width: 768px) {
+  margin: 55px 0 0; 
+font-size: 16px;
+line-height: 1.31;
+
+}
+
+}
+
+.about__icon {
+  margin-left: 14px;
+  
 }
