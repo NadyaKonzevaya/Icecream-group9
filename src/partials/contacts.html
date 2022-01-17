@@ -47,18 +47,18 @@
         <ul class="contact__list-btn">
 
             <li class="contact__item-btn ">
-                <button type="button" class="btn--dark btn-our-loc" 
+                <button type="button" class="btn--dark btn-our-loc js-open-modal" 
                         data-modal="our-location">
                     Our Locations
-                    <svg class="contact__icon icon-svg">
-                        <use href="./images/icons.svg#icon-next"></use>
+                    <svg class="contact__icon">
+                        <use href="./images/icons.svg#icon-next-white"></use>
                     </svg>
                 </button>
             </li>
 
 
             <li class="contact__item-btn ">
-                <button type="button" class="btn-franchise btn" data-modal="">
+                <button type="button" class="btn-franchise btn js-open-modal" data-modal="Franchise">
                     Franchise
                     <svg class="contact__icon">
                         <use href="./images/icons.svg#icon-next"></use>
@@ -66,5 +66,22 @@
                 </button>
             </li>
         </ul>
+
+        <div class="modal js-modal modal-menu " data-modal="our-location">
+            <svg class="modal__cross js-close-modal" aria-label="Переключатель мобильного меню">
+                <use href="./images/icons.svg#menu-icon-cross"></use>
+            </svg>
+            <h2 class="modal__title-contact">Our Location</h2>
+            <p class="modal__text-contact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rem tempore fugit ea, sit blanditiis.</p>
+        </div>
+        <div class="modal js-modal modal-menu " data-modal="Franchise">
+            <svg class="modal__cross js-close-modal" aria-label="Переключатель мобильного меню">
+                <use href="./images/icons.svg#menu-icon-cross"></use>
+            </svg>
+            <h2 class="modal__title-contact">Franchise</h2>
+            <p class="modal__text-contact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rem tempore fugit ea, sit
+                blanditiis.</p>
+        </div>
+
     </div>
 </section>
