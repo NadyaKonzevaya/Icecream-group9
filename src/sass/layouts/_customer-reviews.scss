@@ -1,19 +1,15 @@
 .review {
-  padding-top: 40px;
-  padding-bottom: 43px;
+  @include sectionPadding($top: 40px, $bottom: 43px);
+
   @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @include sectionPadding($top: 60px, $bottom: 60px);
   }
   @media screen and (min-width: 1280px) {
-    padding-top: 61px;
-    padding-bottom: 76px;
+    @include sectionPadding($top: 61px, $bottom: 76px);
   }
 }
 .slider {
-  display: block;
-  justify-content: center;
-  align-items: center;
+  @include flexCentered($display: block, $a-i: center, $j-c: center);
   text-align: center;
   min-width: 0;
 }
@@ -63,9 +59,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 2.58;
+  @include font($l-h: 2.58);
   max-width: 157px;
   z-index: 10;
   background-image: repeating-linear-gradient(
@@ -75,18 +69,17 @@
     #e1e1e1 30px
   );
   @media screen and (min-width: 768px) {
+    @include font($f-s: 14px, $l-h: 2.14);
     max-width: 460px;
-    font-size: 14px;
-    line-height: 2.14;
   }
   @media screen and (min-width: 1280px) {
+    @include font($f-s: 16px, $l-h: 1.87);
     max-width: 750px;
-    font-size: 16px;
-    line-height: 1.87;
   }
 
   .slider-paragraph {
     display: block;
+    @include font($f-s: 14px, $l-h: 1.85);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.85;
@@ -122,18 +115,15 @@
 }
 .slider {
   position: relative;
+  @include flexCentered($display: block, $a-i: center, $j-c: center);
   display: block;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   min-width: 0;
 }
 
 .slick-dots {
   padding-left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCentered($display: flex, $a-i: center, $j-c: center);
 }
 .slick-dots li {
   list-style: none;
