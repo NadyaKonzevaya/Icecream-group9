@@ -14,11 +14,22 @@
             <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor
                 incididunt ut labore et</p>
-            <button type="button" class="button-circle hero__button-circle">
+            <button type="button" class="button-circle hero__button-circle js-open-modal" data-modal="bio-eco">
                 <svg>
                     <use class="hero__button-icon" href="./images/icons.svg#icon-arrow"></use>
                 </svg>
             </button>
+            <div class="modal js-modal" data-modal="bio-eco">
+                <svg class="modal__cross js-close-modal"
+                            aria-label="Переключатель мобильного меню">
+                  <use href="./images/icons.svg#menu-icon-cross"></use>
+                </svg>
+                <h2 class="modal__title">Bio Eco</h2>
+                <p class="modal__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                  sapiente
+                  maiores reprehenderit
+                  tempore excepturi!</p>
+              </div>
 
             <ul class="advant-list">
                 <li class="advant-list__item">
