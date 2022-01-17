@@ -20,7 +20,7 @@
     }
 
     @media screen and (min-width: 1200px){
-        width: 474px;
+        width: 478px;
     }
 
 }
@@ -40,10 +40,14 @@
 
 .social__link{
     @extend %link;
-    // color: #FEA5BB;
+    color: #FEA5BB;
 
-    &:hover{
-        color: cyan;
+    transition-property: color,;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus{
+        color: $accent-color;
     }
 }
 
