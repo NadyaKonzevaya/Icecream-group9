@@ -1,6 +1,6 @@
-<section class="products container">
-  <p class="products__pre-title">100% natural</p>
-  <h2 class="products__title">products</h2>
+<section class="products container" id="products">
+  <p class="products__pre-title pre-title">100% natural</p>
+  <h2 class="title products__title">products</h2>
   <ul class="products__list">
     <li class="products__item">
       <div class="products__card">
@@ -9,11 +9,27 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="products__btn">
-          <svg class="products__icon" width="13" height="12">
+        <button
+          type="button"
+          class="products__btn js-open-modal"
+          data-modal="product__description1"
+        >
+          <svg class="products__icon" aria-label="Кнопка описания продукта" width="13" height="12">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
         </button>
+        <div class="modal js-modal" data-modal="product__description1">
+          <svg class="modal__cross js-close-modal" aria-label="Кнопка закрытия описания продукта">
+            <use href="./images/icons.svg#menu-icon-cross"></use>
+          </svg>
+          <h2 class="modal__title">Delicious strawberry</h2>
+          <p class="modal__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sapiente Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Voluptates sapienteLorem ipsum dolor sit
+            amet consectetur adipisicing elit. Voluptates sapienteLorem ipsum dolor sit amet
+            consectetur adipisicing elit. Voluptates sapiente
+          </p>
+        </div>
       </div>
     </li>
     <li class="products__item">
@@ -23,11 +39,27 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="products__btn">
-          <svg class="products__icon" width="13" height="12">
+        <button
+          type="button"
+          class="products__btn js-open-modal"
+          data-modal="product__description2"
+        >
+          <svg class="products__icon" aria-label="Кнопка описания продукта" width="13" height="12">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
         </button>
+        <div class="modal js-modal" data-modal="product__description2">
+          <svg class="modal__cross js-close-modal" aria-label="Кнопка закрытия описания продукта">
+            <use href="./images/icons.svg#menu-icon-cross"></use>
+          </svg>
+          <h2 class="modal__title">Fantastic caramele</h2>
+          <p class="modal__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sapiente Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Voluptates sapienteLorem ipsum dolor sit
+            amet consectetur adipisicing elit. Voluptates sapienteLorem ipsum dolor sit amet
+            consectetur adipisicing elit. Voluptates sapiente
+          </p>
+        </div>
       </div>
     </li>
     <li class="products__item">
@@ -37,12 +69,29 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <button type="button" class="products__btn">
-          <svg class="products__icon" width="13" height="12">
+        <button
+          type="button"
+          class="products__btn js-open-modal"
+          data-modal="product__description3"
+        >
+          <svg class="products__icon" aria-label="Кнопка описания продукта" width="13" height="12">
             <use href="./images/icons.svg#icon-arrow"></use>
           </svg>
         </button>
+        <div class="modal js-modal" data-modal="product__description3">
+          <svg class="modal__cross js-close-modal" aria-label="Кнопка закрытия описания продукта">
+            <use href="./images/icons.svg#menu-icon-cross"></use>
+          </svg>
+          <h2 class="modal__title">Hell tasty choco</h2>
+          <p class="modal__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sapiente Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Voluptates sapienteLorem ipsum dolor sit
+            amet consectetur adipisicing elit. Voluptates sapienteLorem ipsum dolor sit amet
+            consectetur adipisicing elit. Voluptates sapiente
+          </p>
+        </div>
       </div>
     </li>
   </ul>
+  <div class="overlay js-modal-overlay"></div>
 </section>
