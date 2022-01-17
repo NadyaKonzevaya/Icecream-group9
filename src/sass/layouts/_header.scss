@@ -189,3 +189,64 @@
     color: $accent-color;
   }
 }
+
+.modal__form {
+  margin-bottom: 10px;
+  &:nth-last-child(1) {
+    margin-bottom: 20px;
+  }
+
+  &--number {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }    
+  }
+}
+
+.modal__label {
+  @include font($f-s: 16px, $f-w: 500, $l-h: 1.17);
+  color: $accent-color;
+}
+
+.modal__input {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:focus {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
+
+  &--number {
+  width: 50px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 10px;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:focus {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
+  }
+}
+
+.wrap {
+  @include flexCentered();
+  margin-bottom: 15px;
+}
+
+.modal__button {
+  display: block;
+  @include font($f-s: 16px, $f-w: 700, $l-h: 1.31);
+    width: 160px;
+    height: 44px;
+    display: block;
+  margin: 0 auto;
+}
+
