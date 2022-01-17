@@ -73,29 +73,23 @@
 
 .about__black-text {
   display: block;  
+  @include font(12px, 500, 1.62); 
   margin-bottom: 40px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.62;
   color: $main-text-color;
 
   @media screen and (min-width: 768px) {  
-  font-size: 14px;
-  line-height: 1.76;
-  letter-spacing: 0.04em;
+    @include font(14px, 500, 1.76); 
+    letter-spacing: 0.04em;
   }
 }
 
 .about__grey-text {
-  display: block;  
-  font-weight: 500;
-font-size: 12px;
-line-height: 1.62;
-color: $second-text-color;
+  display: block; 
+   @include font(12px, 500, 1.62); 
+  color: $second-text-color;
 
 @media screen and (min-width: 768px) {
-font-size: 14px;
-line-height: 1.76;
+  @include font(14px, 500, 1.76); 
 letter-spacing: 0.04em;
 }
 }
@@ -105,22 +99,16 @@ letter-spacing: 0.04em;
 }
 
 .about__btn {
-  display: flex;
-    align-items: center;
-    justify-content: center;
+  @include flexCentered(flex, center, center);
   width: 176px;
   height: 44px;
   margin: 20px auto 0;
-  font-weight: 700;
-font-size: 14px;
-line-height: 1.29px;
-color: $accent-color;
+  @include font(14px, 700, 1.29);
+  color: $accent-color;
 
 @media screen and (min-width: 768px) {
   margin: 55px 0 0; 
-font-size: 16px;
-line-height: 1.31;
-
+  @include font(16px, 700, 1.31);
 }
 
 }
