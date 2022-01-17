@@ -29,7 +29,7 @@
     z-index: 1;
     display: block;
     content: '';
-    background-image: url(/images/customer-reviews/quotes.png);
+    background-image: url(../images/customer-reviews/quotes.png);
     background-size: contain;
     width: 54px;
     height: 40px;
@@ -80,9 +80,6 @@
   .slider-paragraph {
     display: block;
     @include font($f-s: 14px, $l-h: 1.85);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.85;
     color: #000000;
     @media screen and (min-width: 768px) {
       max-width: 460px;
@@ -116,7 +113,6 @@
 .slider {
   position: relative;
   @include flexCentered($display: block, $a-i: center, $j-c: center);
-  display: block;
   text-align: center;
   min-width: 0;
 }
@@ -130,7 +126,7 @@
   margin: 0 18px;
 }
 .slick-dots li.slick-active button {
-  background-image: url(/images/customer-reviews/home.png);
+  background-image: url(../images/customer-reviews/home.png);
   background-color: transparent;
   width: 12.4px;
   height: 12px;
