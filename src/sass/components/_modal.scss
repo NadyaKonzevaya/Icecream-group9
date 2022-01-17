@@ -7,12 +7,13 @@
   width: 50%;
 
   position: fixed;
-  top: 20%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
   border-radius: 22px;
-  padding: 15px;
+  border: 1px solid $accent-color;
+  padding: 20px;
   z-index: 3;
 
   background-color: $third-text-color;
