@@ -24,16 +24,6 @@
   margin: 0 auto;
   background-color: #fafafa;
   max-width: 280px;
-  &::before {
-    position: absolute;
-    z-index: 1;
-    display: block;
-    content: '';
-    background-image: url(../images/customer-reviews/quotes.png);
-    background-size: contain;
-    width: 54px;
-    height: 40px;
-  }
   &:not(:last-child) {
     margin-bottom: 52px;
   }
@@ -54,20 +44,30 @@
 
 .slider-title {
   position: relative;
-  left: 8px;
-  top: 12px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  letter-spacing: 0.04em;
+  margin: 0 auto;
   @include font($l-h: 2.58);
   max-width: 157px;
-  z-index: 10;
+  z-index: 1;
   background-image: repeating-linear-gradient(
     hsla(0, 0%, 100%, 0),
     hsla(0, 0%, 100%, 0) 29px,
     #e1e1e1 0,
     #e1e1e1 30px
   );
+  &::before {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    top: -12px;
+    left: -34px;
+    content: '';
+    background-image: url(../images/customer-reviews/quotes.png);
+    background-size: contain;
+    width: 54px;
+    height: 40px;
+  }
   @media screen and (min-width: 768px) {
     @include font($f-s: 14px, $l-h: 2.14);
     max-width: 460px;
@@ -75,6 +75,7 @@
   @media screen and (min-width: 1280px) {
     @include font($f-s: 16px, $l-h: 1.87);
     max-width: 750px;
+    max-height: 83px;
   }
 
   .slider-paragraph {
@@ -93,15 +94,13 @@
 .slider-bottom {
   margin-top: -15px;
   &::before {
-    display: block;
-    margin: 0 auto;
-    font-weight: 700;
-    margin-bottom: 30px;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
     content: '...';
+    font-size: 40px;
     color: #c7133e;
+    display: block;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
   }
 }
 .slick-track {
@@ -123,7 +122,9 @@
 }
 .slick-dots li {
   list-style: none;
-  margin: 0 18px;
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
 }
 .slick-dots li.slick-active button {
   background-image: url(../images/customer-reviews/home.png);
