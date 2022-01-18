@@ -1,6 +1,6 @@
 var linkArray = document.querySelectorAll('.js-open-modal');
 var overlay = document.querySelector('.js-modal-overlay');
-var crossArray = document.querySelectorAll('.js-close-modal');
+var crossArray = document.querySelectorAll('.js-close-modal,.header-nav__link,.header-nav__btn--menu');
 
 linkArray.forEach(function (item) {
   item.addEventListener('click', function (event) {
@@ -16,9 +16,9 @@ linkArray.forEach(function (item) {
 
 crossArray.forEach(function (cross) {
   cross.addEventListener('click', function () {
-    var parent = this.parentNode;
+    let parent = this.closest('.js-modal');
 
     parent.classList.remove('is-open');
-    overlay.classList.remove('is-open');
+    if (!cross.classList.contains('btn')) overlay.classList.remove('is-open');
   });
 });
