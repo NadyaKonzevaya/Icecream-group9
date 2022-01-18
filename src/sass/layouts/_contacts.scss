@@ -24,10 +24,9 @@
 
     background-image: url('../images/contacts/contacts_bg.png'),
       linear-gradient(#ffffff 0%, #fff5f6 0%);
-
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: linear-gradient(#ffffff 0%, #fff5f6 0%),
-        url('../images/contacts/contacts_bg-2x.png');
+      background-image: url('../images/contacts/contacts_bg-2x.png'),
+        linear-gradient(#ffffff 0%, #fff5f6 0%);
     }
   }
 }
@@ -252,7 +251,27 @@
   width: 6px;
   height: 8px;
 }
+.modal__text-contact {
+  margin-bottom: 50px;
+}
 .modal-menu {
   text-align: center;
   border: 2px solid red;
+  top: 50% !important;
+}
+.maps-wrap {
+  display: flex;
+  // justify-content: space-between;
+  padding: 10px;
+}
+.maps-ice {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px grey;
+  margin-right: 10px;
+}
+.maps-ice-local {
+  border-radius: 5px;
 }
