@@ -245,7 +245,6 @@
     width: 180px;
   }
 }
-
 .contact__icon {
   margin-left: 13px;
   width: 6px;
@@ -258,10 +257,10 @@
   text-align: center;
   border: 2px solid red;
   top: 50% !important;
+  position: relative;
 }
 .maps-wrap {
   display: flex;
-  // justify-content: space-between;
   padding: 10px;
 }
 .maps-ice {
@@ -274,4 +273,42 @@
 }
 .maps-ice-local {
   border-radius: 5px;
+}
+.wrap-franchise {
+  padding: 0;
+
+  margin: 0;
+  width: 100%;
+  height: 450px;
+  background-image: url('../images/products/desktop/icecream1-desktop.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.snowflake {
+  width: var(--size);
+  height: var(--size);
+  background: #ffb8ca;
+  border-radius: 50%;
+  position: absolute;
+  top: -5vh;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate3d(var(--left-ini), 0, 0);
+  }
+  100% {
+    transform: translate3d(var(--left-end), 110vh, 0);
+  }
+}
+@for $i from 1 through 50 {
+  .snowflake:nth-child(#{$i}) {
+    --size: #{random(3) * 0.2}vw;
+    --left-ini: #{random(20) - 10}vw;
+    --left-end: #{random(20) - 10}vw;
+    left: #{random(42)}vw;
+    bottom: #{random(45)}vw;
+    animation: snowfall #{5 + random(10)}s linear infinite;
+    animation-delay: -#{random(10)}s;
+  }
 }
