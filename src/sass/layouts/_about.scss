@@ -8,7 +8,7 @@
   background-image: url('../images/about/mobile/bg-mobile.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position-y: bottom;
+  background-position-y: 670px;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url('../images/about/mobile/bg-mobile.png');
   }
@@ -19,10 +19,10 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url('../images/about/desktop/bg-destop.png');
+    background-position-y: 220px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/about/desktop/bg-destop-2x.png');
-      background-position-y: 220px;
     }
   }
 }
