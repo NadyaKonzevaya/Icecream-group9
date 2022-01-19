@@ -250,18 +250,15 @@
   width: 6px;
   height: 8px;
 }
-.modal__text-contact {
-  margin-bottom: 50px;
-}
 .modal-menu {
   text-align: center;
   border: 2px solid red;
   top: 50% !important;
   position: relative;
+  padding: 15px 0 0 0 !important;
 }
 .maps-wrap {
   display: flex;
-  padding: 10px;
 }
 .maps-ice {
   width: 300px;
@@ -269,14 +266,16 @@
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 0 0 10px grey;
-  margin-right: 10px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .maps-ice-local {
   border-radius: 5px;
 }
 .wrap-franchise {
   padding: 0;
-
+  position: relative;
+  overflow: hidden;
   margin: 0;
   width: 100%;
   height: 450px;
@@ -301,7 +300,7 @@
     transform: translate3d(var(--left-end), 110vh, 0);
   }
 }
-@for $i from 1 through 50 {
+@for $i from 1 through 100 {
   .snowflake:nth-child(#{$i}) {
     --size: #{random(3) * 0.2}vw;
     --left-ini: #{random(20) - 10}vw;
